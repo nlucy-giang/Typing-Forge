@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+.typingtest__title {
+  color: white;
+  position: relative;
+  top: 20;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #242526;
+}
+
+body, .quote__input {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+  border-color: #0F1012;
+  padding: 1rem;
+  border-radius: .5rem;
+  width: 700px;
+  max-width: 90%;
+  background-color: #C8C39D;
+}
+
+.container__two {
+  border-color: #0F1012;
+  padding: 1rem;
+  position: relative;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  top: 7px;
+  width: 700px;
+  max-width: 90%;
+  background-color: #1E1E1E;
+  height: 100px;
+}
+
+.tracker__class {
+  color: white;
+  position: relative;
+  font-size: 2rem;
+  right: -500px;
+  top: -80px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.tracker__units {
+  color: white;
+  position: relative;
+  font-size: 2rem;
+  right: -525px;
+  top: -41px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.correct {
+  color: #306DC4;
+}
+
+.incorrect {
+  color: #CD2222;
+  text-decoration: underline;
+}
+
+.start__button {
+  position: absolute;
+  bottom: 160px;
+  right: 520px;
+  font-family: monospace;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #1A1A1A;
+  background-color: #F1F1F1;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #444B4D;
+}
+
+.start__button:hover {
+  background-color: #ABB0B1;
+  color: #1A1A1A;
+}
+
+.start__button:active {
+  background-color: #ABB0B1;
+  box-shadow: 0 5px #444B4D;
+  color: #1A1A1A;
+  transform: translateY(4px);
+}
+
+.timer {
+  position: absolute;
+  top: 56px;
+  right: 250px;
+  font-size: 2rem;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.timerUnits {
+  position: absolute;
+  top: 56px;
+  right: 200px;
+  font-size: 2rem;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.quote-display {
+  margin-bottom: 1rem;
+  margin-left: calc(1rem + 2px);
+  margin-left: calc(1rem + 2px);
+}
+
+.quote-input {
+  background-color: transparent;
+  border: 2px solid #0F1012;
+  outline: none;
+  margin: auto;
+  resize: none;
+  width: 100%;
+  height: 8rem;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border-radius: .5rem;
+}
+
+.quote-input:focus {
+  border-color: white;
+}
+
+
+.modal .wpm {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.modal .wpmUnits {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.modal.active .wpm {
+  transform: translate(-50%, -50%) scale(1);
+  color: white;
+  position: static;
+  font-size: 2rem;
+  left: 100px;
+  bottom: 395px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.modal.active .wpmUnits {
+  transform: translate(-50%, -50%) scale(1);
+  color: white;
+  position: static;
+  font-size: 2rem;
+  right: -525px;
+  top: -41px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}

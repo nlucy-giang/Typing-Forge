@@ -1,0 +1,28 @@
+<main class="typingtest__wrapper" id="typingwrapper">
+
+  <title>FAST FINGERS</title>
+  <link rel="stylesheet" href="typingtest.css">
+  <div class="container__two">
+    <h1 class="typingtest__title">
+      TYPING FORGE
+    </h1>
+    <div class="timer" id="timer">0</div>
+    <div class="timerUnits" id="timerUnits">sec</div>
+    <div class="tracker__units" id="trackerUnits">times</div>
+    <div class="tracker__class" id="trackerItem">0</div>
+  </div>
+  <body>
+    <div class="button__class">
+      <input id="btn" class="start__button" type="button" value="reset" onclick="btnFunc()">
+    </div>
+    <div class="container">
+      <div class="quote-display" id="quoteDisplay">quote</div>
+      <textarea class="quote-input" rows="5" placeholder="type here..." id="quoteInput" autofocus></textarea>
+    </div>
+      <div class="modal" id="modal">
+        <div class="wpm" id="wpmCounter">?</div>
+        <div class="wpmUnits" id="wpmUnits">wpm</div>
+      </div>
+    <script src="typerfunc.js"></script>
+  </body>
+</main>
